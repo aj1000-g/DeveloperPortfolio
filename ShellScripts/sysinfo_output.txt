@@ -1,0 +1,18 @@
+==========================================================
+System Report | Name: Aman Jha | Roll No: 2601730058 | Date: Sat Nov 28 10:21:56 UTC 2026
+==========================================================
+
+--- CPU Information ---
+CPU Model : 13th Gen Intel(R) Core(TM) i3-1315U
+CPU Cores : 8
+
+--- Memory Usage ---
+Total Memory: 3.7Gi | Used Memory: 470Mi | Available: 3.2Gi
+
+--- Top 3 Processes by CPU Usage ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1 19.5  0.3  24272 15384 ?        Ss   10:21   0:00 /sbin/init
+aman_jha     423 19.3  0.3  22380 13612 ?        Ss   10:21   0:00 /usr/lib/systemd/systemd --user
+root         205 13.2  0.8 123484 32716 ?        Ssl  10:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+
+Report generated successfully.
