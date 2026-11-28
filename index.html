@@ -3,186 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aman Jha | Developer Portfolio</title>
+  <title>Aman Jha — Developer Portfolio</title>
   <style>
-    :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --bg-dark: #0f172a;
-      --card-bg: #1e293b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: #334155;
-    }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      line-height: 1.6;
-      padding: 0 1rem;
+      font-family: Arial, sans-serif; color: #2c2c2c;
+      line-height: 1.75; max-width: 860px;
+      margin: 48px auto; padding: 0 24px;
     }
-
-    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1rem; }
-
     header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 4px solid #1F4E79;
+      padding-bottom: 20px; margin-bottom: 36px;
     }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      margin-bottom: 0.5rem;
+    h1 { color: #1F4E79; font-size: 2rem; margin-bottom: 6px; }
+    h2 {
+      color: #2E75B6; font-size: 1.15rem; font-weight: bold;
+      margin: 32px 0 14px; padding-left: 12px;
+      border-left: 5px solid #2E75B6;
     }
-
-    header p.subtitle {
-      font-size: 1.15rem;
-      color: var(--accent);
-      font-weight: 500;
-      margin-bottom: 0.4rem;
-    }
-
-    header p.institution { font-size: 1rem; color: var(--text-muted); }
-
-    section { margin-top: 2.5rem; }
-
-    h2.section-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-    }
-
-    h2.section-title::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-      margin-left: 0.75rem;
-    }
-
-    .about-card, .project-card, .contact-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-    }
-
-    .about-card { font-size: 1.05rem; color: var(--text-muted); }
-    .about-card strong { color: var(--text-main); }
-
-    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-
     .badge {
-      background: rgba(37, 99, 235, 0.15);
-      color: #60a5fa;
-      border: 1px solid rgba(37, 99, 235, 0.35);
-      padding: 0.45rem 0.9rem;
-      border-radius: 9999px;
-      font-size: 0.9rem;
-      font-weight: 600;
+      display: inline-block; background: #1F4E79; color: #fff;
+      padding: 4px 14px; border-radius: 16px;
+      font-size: 0.82rem; margin: 4px 4px 4px 0;
     }
-
-    .project-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-    .project-card p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.98rem; }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      background: var(--primary);
-      color: #ffffff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
+    .card {
+      border: 1px solid #d0d8e4; border-radius: 8px;
+      padding: 20px 22px; margin: 12px 0; background: #f7faff;
     }
-    .btn:hover { background: var(--primary-dark); }
-
-    .contact-card { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; }
-    .contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; }
-    .contact-item a { color: var(--accent); text-decoration: none; font-weight: 500; }
-    .contact-item a:hover { text-decoration: underline; }
-
-    footer { text-align: center; padding: 3rem 1rem 1.5rem; color: #64748b; font-size: 0.88rem; }
+    .card h3 { color: #1F4E79; margin-bottom: 8px; }
+    .card p { margin-bottom: 6px; }
+    table {
+      width: 100%; border-collapse: collapse; margin: 14px 0;
+    }
+    th {
+      background: #1F4E79; color: #fff;
+      padding: 8px 12px; text-align: left; font-size: 0.9rem;
+    }
+    td { padding: 8px 12px; border-bottom: 1px solid #e0e8f0; font-size: 0.9rem; }
+    tr:nth-child(even) td { background: #f0f5fb; }
+    a { color: #2E75B6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px; padding-top: 18px;
+      border-top: 1px solid #d0d8e4;
+      text-align: center; font-size: 0.82rem; color: #888;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Aman Jha</h1>
-      <p class="subtitle">B.Tech Computer Science &amp; Engineering (AI &amp; ML)</p>
-      <p class="institution">K.R. Mangalam University, Gurugram &bull; Batch 2026&ndash;2030</p>
-    </header>
+  <header>
+    <h1>Hi, I am Aman Jha</h1>
+    <p>B.Tech CSE (AI &amp; ML) Student • K.R. Mangalam University, Gurugram • Batch 2026–2030</p>
+    <p style="margin-top:12px">
+      <span class="badge">Python</span>
+      <span class="badge">Linux</span>
+      <span class="badge">Git &amp; GitHub</span>
+      <span class="badge">Shell Scripting</span>
+      <span class="badge">REST APIs</span>
+      <span class="badge">Markdown</span>
+    </p>
+  </header>
 
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-card">
-        <p>
-          I am a Computer Science student specializing in <strong>AI / ML</strong> at K.R. Mangalam University.
-          I enjoy building reliable automation tools in Linux and Bash, consuming REST APIs with Python and jq,
-          and managing clean version-controlled software workflows on GitHub while strengthening my foundation in Data Structures and Algorithms.
-        </p>
-      </div>
-    </section>
+  <h2>About Me</h2>
+  <p>
+    I am a B.Tech Computer Science and Engineering (AI &amp; ML) student at K.R. Mangalam University, Gurugram,
+    with a strong focus on Linux systems, Bash automation, and Python development. I enjoy building practical
+    command-line utilities and working with Git, GitHub, and REST APIs. My career goal is to specialize in
+    Artificial Intelligence and Machine Learning to design reliable, scalable software systems.
+  </p>
 
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <span class="badge">Python</span>
-        <span class="badge">C++</span>
-        <span class="badge">Linux (Ubuntu / WSL2)</span>
-        <span class="badge">Bash Scripting</span>
-        <span class="badge">Git &amp; GitHub</span>
-        <span class="badge">REST APIs &amp; jq</span>
-        <span class="badge">HTML5 &amp; CSS3</span>
-        <span class="badge">Markdown</span>
-        <span class="badge">GitHub Pages</span>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-card">
-        <h3>DeveloperPortfolio</h3>
-        <p>
-          A beginner developer ecosystem portfolio demonstrating Linux hardware diagnostics, binary number conversions,
-          automated Bash system reporting and backup scripts, REST API data pipelines, and GitHub Pages deployment.
-        </p>
-        <a class="btn" href="https://github.com/aj1000-g/DeveloperPortfolio" target="_blank" rel="noopener noreferrer">
-          View on GitHub &rarr;
-        </a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-card">
-        <div class="contact-item">
-          <span>GitHub:</span>
-          <a href="https://github.com/aj1000-g" target="_blank" rel="noopener noreferrer">github.com/aj1000-g</a>
-        </div>
-        <div class="contact-item">
-          <span>LinkedIn:</span>
-          <a href="https://www.linkedin.com/in/aman-jha-02b831429" target="_blank" rel="noopener noreferrer">linkedin.com/in/aman-jha-02b831429</a>
-        </div>
-        <div class="contact-item">
-          <span>Email:</span>
-          <a href="mailto:aj4560219@gmail.com">aj4560219@gmail.com</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2026 Aman Jha &bull; Hosted on GitHub Pages</p>
-    </footer>
+  <h2>Featured Projects</h2>
+  <div class="card">
+    <h3>DeveloperPortfolio — Capstone Project</h3>
+    <p>
+      Beginner Developer Ecosystem Portfolio showcasing workstation Linux system profiling, binary conversions,
+      automated Bash scripts (sysinfo.sh and backup.sh), GitHub &amp; JSONPlaceholder REST API integration,
+      a technical resume, and a 6-semester AI/ML learning roadmap.
+    </p>
+    <p><strong>Tech Stack:</strong> Python, Bash, Linux, Git, GitHub, curl, jq, HTML, CSS, Markdown</p>
+    <p>
+      <a href="https://github.com/aj1000-g/DeveloperPortfolio" target="_blank" rel="noopener noreferrer">
+        View Repository on GitHub &rarr;
+      </a>
+    </p>
   </div>
+
+  <div class="card">
+    <h3>CSE103 Lab — GitHub Collaboration &amp; API Interaction</h3>
+    <p>
+      Lab repository covering Git workflows, Linux shell scripting, Markdown documentation,
+      REST API interaction using curl and Postman, and debugging techniques.
+    </p>
+    <p><strong>Tech Stack:</strong> Python, Bash, Git, GitHub, curl, jq, Linux</p>
+    <p>
+      <a href="https://github.com/aj1000-g/cse103-lab-LAB3" target="_blank" rel="noopener noreferrer">
+        View Repository on GitHub &rarr;
+      </a>
+    </p>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <table>
+    <tr><th>Category</th><th>Technologies</th></tr>
+    <tr><td>Languages</td><td>Python (Beginner), C++, Bash / Shell Scripting</td></tr>
+    <tr><td>Tools</td><td>Git, GitHub, VS Code, Linux Terminal (Ubuntu / WSL2), curl, jq, Postman</td></tr>
+    <tr><td>Concepts</td><td>File Systems, Process Management, Binary Arithmetic, REST APIs, Markdown</td></tr>
+    <tr><td>Platforms</td><td>HackerRank, LeetCode, freeCodeCamp</td></tr>
+  </table>
+
+  <h2>Certifications &amp; Progress</h2>
+  <p>HackerRank Python (Basic) — <strong>Earned</strong></p>
+  <p>NPTEL Introduction to Programming in Python — <strong>Planned (Target: Semester 2)</strong></p>
+  <p>LeetCode: Practicing Easy DSA problems</p>
+  <p>freeCodeCamp: Responsive Web Design — In Progress</p>
+
+  <h2>Learning Roadmap</h2>
+  <p>
+    I have planned a structured semester-wise roadmap covering core CS, databases, web development,
+    and my chosen specialisation track (<strong>AI / ML — Artificial Intelligence &amp; Machine Learning</strong>).
+    Full details:
+    <a href="https://github.com/aj1000-g/DeveloperPortfolio/blob/main/Portfolio/learning_roadmap.md" target="_blank" rel="noopener noreferrer">
+      View Roadmap
+    </a>
+  </p>
+
+  <h2>Contact</h2>
+  <p>GitHub   : <a href="https://github.com/aj1000-g" target="_blank" rel="noopener noreferrer">github.com/aj1000-g</a></p>
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/aman-jha-02b831429" target="_blank" rel="noopener noreferrer">linkedin.com/in/aman-jha-02b831429</a></p>
+  <p>Email    : <a href="mailto:aj4560219@gmail.com">aj4560219@gmail.com</a></p>
+
+  <footer>
+    Built with HTML &amp; CSS &bull; Hosted on GitHub Pages &bull; Updated November 2026
+  </footer>
 </body>
 </html>
