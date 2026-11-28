@@ -1,0 +1,73 @@
+===== COMMAND 1: ls -la ~ =====
+total 124
+drwxr-x--- 12 aman_jha aman_jha  4096 Nov 28 10:21 .
+drwxr-xr-x  8 root     root      4096 Nov 14 08:32 ..
+-rw-------  1 aman_jha aman_jha 13248 Nov 28 10:17 .bash_history
+-rw-r--r--  1 aman_jha aman_jha   220 Oct 19 09:47 .bash_logout
+-rw-r--r--  1 aman_jha aman_jha  3771 Oct 19 09:47 .bashrc
+drwxr-x---  4 aman_jha aman_jha  4096 Oct 19 09:52 .cache
+drwxr-x---  4 aman_jha aman_jha  4096 Oct 19 14:08 .config
+-rw-r--r--  1 aman_jha aman_jha   141 Nov 23 14:25 .gitconfig
+drwxr-xr-x  2 aman_jha aman_jha  4096 Oct 19 09:52 .landscape
+-rw-------  1 aman_jha aman_jha    43 Nov 28 09:21 .lesshst
+drwx------  3 aman_jha aman_jha  4096 Oct 24 14:25 .local
+-rw-rw-r--  1 aman_jha aman_jha     0 Nov 28 07:57 .motd_shown
+-rw-r--r--  1 aman_jha aman_jha   807 Oct 19 09:47 .profile
+-rw-------  1 aman_jha aman_jha  3398 Nov 14 11:59 .viminfo
+drwxr-xr-x  8 aman_jha aman_jha  4096 Nov 28 10:21 DeveloperPortfolio
+-rw-r--r--  1 aman_jha aman_jha    71 Nov 14 11:58 aman.txt
+-rwxrwxrwx  1 root     aman_jha     0 Oct 19 14:43 amanjha.sh
+drwxr-xr-x  2 aman_jha aman_jha  4096 Nov 14 11:55 asodfjalk
+drwxr-xr-x  4 aman_jha aman_jha  4096 Oct 19 15:48 cse103-lab
+drwxr-xr-x  2 aman_jha aman_jha  4096 Oct 24 15:14 cse103_backups
+drwxr-xr-x  3 aman_jha aman_jha  4096 Oct 19 14:32 cse103_lab
+-rwxr-xr-x  1 aman_jha aman_jha   282 Oct 24 15:38 defensive_script.sh
+-rw-r--r--  1 aman_jha aman_jha    30 Oct 23 04:48 error.log
+-rw-r--r--  1 aman_jha aman_jha    36 Oct 23 01:20 file1.txt
+-rwxr-xr-x  1 aman_jha aman_jha   241 Oct 24 15:32 fixed_script.sh
+-rw-r--r--  1 aman_jha aman_jha    71 Nov 13 01:03 harry.txt
+-rw-r--r--  1 aman_jha aman_jha    71 Nov 14 11:54 jha.txt
+-rw-r--r--  1 aman_jha aman_jha     0 Oct 23 01:13 my
+-rw-r--r--  1 aman_jha aman_jha    60 Oct 23 04:46 output.txt
+-rw-r--r--  1 aman_jha aman_jha    18 Oct 24 15:39 students.txt
+drwxr-xr-x  2 aman_jha aman_jha  4096 Oct 19 15:31 ~p
+
+===== COMMAND 2: ps aux | head -10 =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1 20.7  0.3  24272 15384 ?        Ss   10:21   0:00 /sbin/init
+root           2  0.3  0.0   3820  2524 hvc0     Sl+  10:21   0:00 /init
+root           3  0.0  0.0   3680  2224 hvc0     S+   10:21   0:00 init-watcher
+root           8  0.0  0.0   3820  2296 hvc0     Sl+  10:21   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          48  6.4  0.9  66916 36504 ?        S<s  10:21   0:00 /usr/lib/systemd/systemd-journald
+systemd+      81  3.6  0.3  22448 14476 ?        Ss   10:21   0:00 /usr/lib/systemd/systemd-resolved
+root          89  7.3  0.3  35108 12168 ?        Ss   10:21   0:00 /usr/lib/systemd/systemd-udevd
+root         107  0.8  0.2  35392  8160 ?        S    10:21   0:00 (udev-worker)
+root         108  0.4  0.1  34956  7304 ?        S    10:21   0:00 (udev-worker)
+
+===== COMMAND 3: df -h =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         256G  111G  145G  44% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.8G  954G   1% /
+none            1.9G   20K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  3.4M  1.9G   1% /init
+none            1.9G  532K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   64K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   64K  1.9G   1% /mnt/wslg/doc
+C:\             256G  111G  145G  44% /mnt/c
+D:\             220G  101M  220G   1% /mnt/d
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.9G     0  1.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           378M   12K  378M   1% /run/user/1000
+
+===== COMMAND 4: free -h =====
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       473Mi       2.7Gi       4.3Mi       572Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
