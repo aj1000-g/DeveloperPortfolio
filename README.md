@@ -40,12 +40,22 @@
 
 ---
 
-## Screenshots (`Screenshots/`)
-Supporting screenshots in `Screenshots/`:
-- `Screenshots/backup_demo.png` — Automated backup script execution
-- `Screenshots/github_profile.png` — GitHub profile & pinned repository
-- `Screenshots/linkedin_profile.png` — LinkedIn profile
-- `Screenshots/portfolio_site.png` — Live GitHub Pages portfolio site
+## Evidence & Verification Screenshots (`Screenshots/`)
+
+### Automated Folder Backup Demo
+![Backup Demo](Screenshots/backup_demo.png)
+
+### Terminal Verification (`git log --oneline` & `sysinfo.sh`)
+![Terminal Verification](Screenshots/terminal_verification.jpg)
+
+### GitHub Repository (`DeveloperPortfolio`)
+![GitHub Repository](Screenshots/github_repo.png)
+
+### GitHub Profile
+![GitHub Profile](Screenshots/github_profile.png)
+
+### LinkedIn Profile
+![LinkedIn Profile](Screenshots/linkedin_profile.png)
 
 ---
 
