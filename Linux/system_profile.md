@@ -41,7 +41,7 @@ Reading remainders from bottom to top (MSB to LSB):
 Verification: `64 + 0 + 0 + 8 + 0 + 2 + 1 = 75`
 
 ### 2. Binary to Decimal Conversion (110101 to Decimal)
-Using the positional weight method (powers of 2 from right to left, starting at ^0$):
+Using the positional weight method (powers of 2 from right to left, starting at `2^0`):
 
 - Bit 5: `1 × 2^5 = 1 × 32 = 32`
 - Bit 4: `1 × 2^4 = 1 × 16 = 16`
